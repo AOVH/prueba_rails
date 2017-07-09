@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tasa financiamiento:</strong>
+  <%= @setting.tasa_financiamiento %>
+</p>
+
+<p>
+  <strong>Porcentaje enganche:</strong>
+  <%= @setting.porcentaje_enganche %>
+</p>
+
+<p>
+  <strong>Plazo maximo:</strong>
+  <%= @setting.plazo_maximo %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @setting.active %>
+</p>
+
+<%= link_to 'Edit', edit_setting_path(@setting) %> |
+<%= link_to 'Back', settings_path %>

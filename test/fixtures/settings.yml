@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tasa_financiamiento: 1
+  porcentaje_enganche: 1
+  plazo_maximo: 2017-07-06
+  active: 1
+
+two:
+  tasa_financiamiento: 1
+  porcentaje_enganche: 1
+  plazo_maximo: 2017-07-06
+  active: 1

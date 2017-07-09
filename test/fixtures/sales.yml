@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_client: 1
+  id_item: 1
+  id_financing_models: 1
+  id_financing_types: 1
+  id_paid_system: 1
+  cantidad_pagos: 1
+  fecha_venta: 2017-07-06
+  estatus: MyString
+  active: 1
+
+two:
+  id_client: 1
+  id_item: 1
+  id_financing_models: 1
+  id_financing_types: 1
+  id_paid_system: 1
+  cantidad_pagos: 1
+  fecha_venta: 2017-07-06
+  estatus: MyString
+  active: 1

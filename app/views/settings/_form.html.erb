@@ -1,0 +1,33 @@
+<%= form_for(@setting) do |f| %>
+  <% if @setting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@setting.errors.count, "error") %> prohibited this setting from being saved:</h2>
+
+      <ul>
+      <% @setting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tasa_financiamiento %><br>
+    <%= f.number_field :tasa_financiamiento %>
+  </div>
+  <div class="field">
+    <%= f.label :porcentaje_enganche %><br>
+    <%= f.number_field :porcentaje_enganche %>
+  </div>
+  <div class="field">
+    <%= f.label :plazo_maximo %><br>
+    <%= f.date_select :plazo_maximo %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.number_field :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

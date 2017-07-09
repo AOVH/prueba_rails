@@ -1,0 +1,53 @@
+<%= form_for(@sale) do |f| %>
+  <% if @sale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sale.errors.count, "error") %> prohibited this sale from being saved:</h2>
+
+      <ul>
+      <% @sale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_client %><br>
+    <%= f.number_field :id_client %>
+  </div>
+  <div class="field">
+    <%= f.label :id_item %><br>
+    <%= f.number_field :id_item %>
+  </div>
+  <div class="field">
+    <%= f.label :id_financing_models %><br>
+    <%= f.number_field :id_financing_models %>
+  </div>
+  <div class="field">
+    <%= f.label :id_financing_types %><br>
+    <%= f.number_field :id_financing_types %>
+  </div>
+  <div class="field">
+    <%= f.label :id_paid_system %><br>
+    <%= f.number_field :id_paid_system %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidad_pagos %><br>
+    <%= f.number_field :cantidad_pagos %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_venta %><br>
+    <%= f.date_select :fecha_venta %>
+  </div>
+  <div class="field">
+    <%= f.label :estatus %><br>
+    <%= f.text_field :estatus %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.number_field :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

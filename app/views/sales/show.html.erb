@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id client:</strong>
+  <%= @sale.id_client %>
+</p>
+
+<p>
+  <strong>Id item:</strong>
+  <%= @sale.id_item %>
+</p>
+
+<p>
+  <strong>Id financing models:</strong>
+  <%= @sale.id_financing_models %>
+</p>
+
+<p>
+  <strong>Id financing types:</strong>
+  <%= @sale.id_financing_types %>
+</p>
+
+<p>
+  <strong>Id paid system:</strong>
+  <%= @sale.id_paid_system %>
+</p>
+
+<p>
+  <strong>Cantidad pagos:</strong>
+  <%= @sale.cantidad_pagos %>
+</p>
+
+<p>
+  <strong>Fecha venta:</strong>
+  <%= @sale.fecha_venta %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @sale.estatus %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @sale.active %>
+</p>
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>
