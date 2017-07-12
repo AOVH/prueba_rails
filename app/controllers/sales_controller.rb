@@ -45,6 +45,7 @@ class SalesController < ApplicationController
          articulos.each do |articulo|
           sold = ItemsSold.new(items_solds_params)
           ultima_venta= Sale.last
+          sold.id_item=articulo[:id_item]
           sold.id_sale=ultima_venta.id
           sold.cantidad=articulo[:item_cantidad]
           sold.save()
